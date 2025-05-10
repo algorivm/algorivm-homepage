@@ -16,6 +16,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -44,16 +48,14 @@ jobs:
         id: build
         run: yarn build
 
-      - name: Was the latest docs dist folder committed
-        id: check-docs
-        run: |
-          # The user should have checked a docs folder in the commit
-          # If the docs folder was updated, we will exit with an error
-          # Because it means the docs folder checked in was not the latest
-          
-          # Perform a git diff to check if the dist folder was updated
-          git diff --exit-code --quiet HEAD^ HEAD docs
-          if [ $? -ne 0 ]; then
-            echo "The docs folder was updated. Please commit the latest docs folder and then commit the changes."
-            exit 1
-          fi
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
