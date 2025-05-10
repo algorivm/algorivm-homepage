@@ -1,0 +1,3 @@
+[submodule "public/branding"]
+	path = public/branding
+	url = git@github.com:algorivm/branding.git
