@@ -62,7 +62,7 @@ html
     background-color: color.scale($base, $alpha: -20%)
     padding: 1em
     cursor: pointer
-    z-index: 2
+    z-index: 3
 
     &.is-right
       right: 25%
@@ -77,16 +77,16 @@ html
       font-weight: 700
       font-size: 1.25rem
       margin-bottom: 0.75em
+      color: white
 
     h4
       font-weight: 600
       font-size: 1rem
       margin-bottom: 0.75em
+      color: $primary
 
     p
       font-size: 0.9rem
-
-    *
       color: $secondary
 
   > img
@@ -205,11 +205,81 @@ html
 .has-text-secondary
   color: $secondary !important
 
-// //////////////////////////////////////////////////////////
-// Desktop sizing
+.level-item
+  &.has-gaps
+    gap: 1em
 
 // //////////////////////////////////////////////////////////
 // Tablet sizing
 
 // //////////////////////////////////////////////////////////
 // Mobile sizing
+
+@media screen and (max-width: 769px)
+  .level-item
+    flex-direction: column
+
+  .title
+    &.is-super
+      font-size: 2rem
+
+  #introducing-rozii
+    text-align: center
+    padding-bottom: 2.5em
+
+  #user-trial
+    text-align: center
+    padding-bottom: 2.5em
+
+    .columns
+      display: flex
+      flex-direction: column-reverse
+
+    .button
+      width: 100%
+
+  .navbar
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+    .navbar-menu
+      display: block !important
+      align-items: center
+      justify-content: center
+      align-items: center
+      max-height: none !important
+      width: 100%
+
+      .navbar-end
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: center
+        align-items: center
+
+        .navbar-item
+          font-size: 0.9rem
+
+  .image-grid
+    .spoiler
+      position: fixed
+      width: 90vw !important
+      height: fit-content
+      left: 5vw !important
+      right: 5vw !important
+      top: 10vh !important
+      background: $base !important
+      border-radius: 0.75em !important
+
+    &.has-active
+      &::after
+        content: " "
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: rgba(0, 0, 0, 0.8)
+        z-index: 2
