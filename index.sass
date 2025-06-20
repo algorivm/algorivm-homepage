@@ -5,7 +5,7 @@ html
   scroll-behavior: smooth
 
 // //////////////////////////////////////////////////////////
-// Generic color utilities
+// Generic
 
 .bg-base
   background-color: $base
@@ -17,6 +17,9 @@ html
   background-size: 125%
 
   *
+    color: black
+
+  .content *
     color: black !important
 
 // //////////////////////////////////////////////////////////
@@ -43,6 +46,67 @@ html
   &.is-max-tiny
     max-width: 400px
     margin: 0 auto
+
+.image-grid
+  width: 100%
+  position: relative
+  display: flex
+  flex-wrap: wrap
+
+  .spoiler
+    display: none
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 50%
+    background-color: color.scale($base, $alpha: -20%)
+    padding: 1em
+    cursor: pointer
+    z-index: 2
+
+    &.is-right
+      right: 25%
+    &.is-near-right
+      right: 50%
+    &.is-left
+      left: 25%
+    &.is-near-left
+      left: 50%
+
+    h3
+      font-weight: 700
+      font-size: 1.25rem
+      margin-bottom: 0.75em
+
+    h4
+      font-weight: 600
+      font-size: 1rem
+      margin-bottom: 0.75em
+
+    p
+      font-size: 0.9rem
+
+    *
+      color: $secondary
+
+  > img
+    width: 25%
+    cursor: pointer
+    transition: opacity 200ms ease-in-out
+
+    &.is-active
+      opacity: 1 !important
+
+      + .spoiler
+        display: block !important
+
+    &:hover
+      opacity: 1 !important
+
+  &:hover,
+  &.has-active
+    > img
+      opacity: 0.5
 
 // //////////////////////////////////////////////////////////
 // Specific elements
