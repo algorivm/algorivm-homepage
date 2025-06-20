@@ -34,23 +34,23 @@
         </div>
 
         <div class="navbar-end">
-          <a class="navbar-item" href="#home">
+          <a class="navbar-item" href="/">
             <span>HOME</span>
           </a>
           |
-          <a class="navbar-item" href="#about">
+          <a class="navbar-item" href="#who-are-we">
             <span>ABOUT US</span>
           </a>
           |
-          <a class="navbar-item" href="#team">
+          <a class="navbar-item" href="#meet-the-team">
             <span>THE TEAM</span>
           </a>
           |
-          <a class="navbar-item" href="#rozii">
+          <a class="navbar-item" href="#introducing-rozii">
             <span>ROZii</span>
           </a>
           |
-          <a class="navbar-item" href="#contact">
+          <a class="navbar-item" href="#contact-us">
             <span>CONTACT US</span>
           </a>
         </div>
@@ -102,9 +102,41 @@
     <!-- Innovate UK Quote -->
     <section class="section bg-base" id="innovate-uk-quote">
       <div class="container is-max-desktop">
-        <blockquote>The project is game changing and represents an excellent use
-          of Ai technology. The innovation is of the highest technical
-          merit.</blockquote>
+        <div class="block has-text-centered">
+          <blockquote class="title is-size-4">
+            <span class="icon is-medium has-text-secondary"
+              style="transform: translateY(-4px)">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="currentColor"
+                width="128" height="128" viewBox="0 0 12 12"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M.78,8.89c0-3.07,1.53-4.3,4.3-4.34L5.38,6C3.78,6.17,3,7,3.1,8.31H4.54V12H.78Zm5.9,0c0-3.07,1.53-4.3,4.3-4.34L11.28,6C9.68,6.17,8.89,7,9,8.31h1.44V12H6.68Z" />
+              </svg>
+            </span>
+            <span class="has-text-secondary">The project is game changing and
+              represents an excellent
+              use
+              of Ai technology. The innovation is of the highest technical
+              merit.</span>
+            <span class="icon is-medium has-text-secondary"
+              style="transform: translateY(16px)">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="currentColor"
+                width="128" height="128" viewBox="0 0 12 12"
+                xmlns="http://www.w3.org/2000/svg">
+                <g style="transform: translate(-12px, -12px)">
+                  <path
+                    d="M16.94,15.11c0,3.07-1.53,4.3-4.3,4.34L12.35,18c1.6-.16,2.39-1,2.28-2.3H13.18V12h3.76Zm5.9,0c0,3.07-1.53,4.3-4.3,4.34L18.24,18c1.6-.16,2.39-1,2.28-2.3H19.08V12h3.76Z" />
+                </g>
+              </svg>
+            </span>
+          </blockquote>
+        </div>
+        <div class="block">
+          <img src="/images/innovate-uk.png" alt="Innovate UK Logo"
+            width="150" class="mx-auto is-block" />
+        </div>
       </div>
     </section>
 
@@ -144,9 +176,10 @@
     <section class="section bg-instruments" id="how-it-works">
       <div class="container is-max-desktop">
         <div class="content">
-          <h3>How it works</h3>
+          <h2>How it works</h2>
           <p>
-            Our rozii system listens to the musician and provides visual and
+            Our <strong>rozii</strong> system listens to the musician and
+            provides visual and
             verbal feedback on key aspects of the performance to radically
             improve the teaching and learning of a musical instrument.
           </p>
@@ -168,7 +201,7 @@
               a
               much more rewarding user experience.</li>
           </ul>
-          <h3>Our vision</h3>
+          <h2>Our vision</h2>
           <p>
             It is important to highlight that we are not trying to use Ai
             technology to replace the human aspect of learning or teaching an
@@ -229,56 +262,89 @@
     <!-- Contact us -->
     <section class="section bg-instruments" id="contact-us">
       <div class="container is-max-desktop">
+
         <div class="block">
           <h1 class="title">Contact us</h1>
           <p>If you need further information, please get in contact with us and
             we'll be happy to help.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer bg-base">
-      <div class="content has-text-centered">
-
-        <!-- Primary logo -->
-        <div class="block">
-          <img
-            src="/branding/by_theme/dark/Algorivm-Brain.svg"
-            alt="Algorivm Logo"
-            width="180"
-            height="100" />
+        <!-- Form: TBD on where to POST to -->
+        <div class="subcontainer is-max-tiny">
+          <form class="block">
+            <div class="field">
+              <div class="control">
+                <input class="input" type="text" name="name" autocomplete="name"
+                  placeholder="Full name" />
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <input class="input" type="email" name="email"
+                  autocomplete="email"
+                  placeholder="E-mail" />
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" name="message"
+                  placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <button class="button is-primary is-fullwidth"
+                  type="submit">
+                  <span>Send</span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </section>
 
-        <!-- Company logos -->
-        <div class="block level-item">
-          <img src="/public/images/innovate-uk.png" alt="Innovate UK Logo"
-            class="mr-6"
-            width="120" />
-          <img src="/public/images/queen-mary.png" alt="Queen Mary Logo"
-            class="mr-6"
-            width="120" />
-          <img src="/public/images/penlogo.png" alt="Pen Logo" class="mr-6"
-            width="120" />
-          <img src="/public/images/edinburgh.png" alt="Edinburgh Logo"
-            class="mr-6"
-            width="120" />
-        </div>
+      <!-- Footer -->
+      <footer class="footer bg-base">
+        <div class="content has-text-centered">
 
-        <!-- Final text -->
-        <div class="block">
-          <p class="has-text-primary">©2025 • info@algorivm.com</p>
-          <!-- <div class="level-item">
+          <!-- Primary logo -->
+          <div class="block">
+            <img
+              src="/branding/by_theme/dark/Algorivm-Brain.svg"
+              alt="Algorivm Logo"
+              width="180"
+              height="100" />
+          </div>
+
+          <!-- Company logos -->
+          <div class="block level-item">
+            <img src="/images/innovate-uk.png" alt="Innovate UK Logo"
+              class="mr-6"
+              width="120" />
+            <img src="/images/queen-mary.png" alt="Queen Mary Logo"
+              class="mr-6"
+              width="120" />
+            <img src="/images/penlogo.png" alt="Pen Logo" class="mr-6"
+              width="120" />
+            <img src="/images/edinburgh.png" alt="Edinburgh Logo"
+              class="mr-6"
+              width="120" />
+          </div>
+
+          <!-- Final text -->
+          <div class="block">
+            <p class="has-text-primary">©2025 • info@algorivm.com</p>
+            <!-- <div class="level-item">
             <a href="/data-policy" class="has-text-primary">Our data policy</a>
             <span>&nbsp;|&nbsp;</span>
             <a href="/safeguarding" class="has-text-primary">Safeguarding</a>
           </div> -->
+          </div>
         </div>
-      </div>
 
-    </footer>
+      </footer>
 
-    <!-- Main -->
-    <script type="module" src="/src/main.ts"></script>
-  </body>
-</html>
+      <!-- Main -->
+      <script type="module" src="/src/main.ts"></script>
+    </body>
+  </html>

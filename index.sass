@@ -1,4 +1,8 @@
+@use "sass:color"
 @use "./public/branding/theme.sass" as *
+
+html
+  scroll-behavior: smooth
 
 // //////////////////////////////////////////////////////////
 // Generic color utilities
@@ -32,6 +36,14 @@
   &.is-lower
     top: 75%
 
+.subcontainer
+  &.is-max-tablet
+    max-width: 779px
+    margin: 0 auto
+  &.is-max-tiny
+    max-width: 400px
+    margin: 0 auto
+
 // //////////////////////////////////////////////////////////
 // Specific elements
 
@@ -50,7 +62,7 @@
   #ad-1
     display: block
     max-height: 30em
-    margin: -4em auto -1.5em
+    margin: -4em auto -1em
 
   #rozii-logo
     max-width: 26em
@@ -86,7 +98,7 @@
       &:not(:hover)
         color: white !important
       &:hover
-        color: $primary !important
+        color: $secondary !important
 
   *
     background: transparent !important
@@ -116,6 +128,18 @@
       &:hover
         background: $secondary !important
         color: white !important
+
+.input,
+.textarea
+  background: white !important
+  border: 2px solid $secondary !important
+  border-radius: 0 !important
+
+  &::placeholder
+    color: color.scale($secondary, $alpha: -50%) !important
+
+.has-text-secondary
+  color: $secondary !important
 
 // //////////////////////////////////////////////////////////
 // Desktop sizing
