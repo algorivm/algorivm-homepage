@@ -123,6 +123,9 @@ html
   padding-top: 0
   padding-bottom: 0
 
+  .column:last-child
+    padding-bottom: 2.5em
+
   #ad-1
     display: block
     max-height: 30em
@@ -134,6 +137,9 @@ html
 #user-trial
   padding-top: 0
   padding-bottom: 0
+
+  .column:first-child
+    padding-bottom: 2.5em
 
   #ad-2
     display: block
@@ -212,32 +218,7 @@ html
 // //////////////////////////////////////////////////////////
 // Tablet sizing
 
-// //////////////////////////////////////////////////////////
-// Mobile sizing
-
-@media screen and (max-width: 769px)
-  .level-item
-    flex-direction: column
-
-  .title
-    &.is-super
-      font-size: 2rem
-
-  #introducing-rozii
-    text-align: center
-    padding-bottom: 2.5em
-
-  #user-trial
-    text-align: center
-    padding-bottom: 2.5em
-
-    .columns
-      display: flex
-      flex-direction: column-reverse
-
-    .button
-      width: 100%
-
+@media screen and (max-width: 960px + 2 * 32px)
   .navbar
     display: flex
     align-items: center
@@ -261,6 +242,30 @@ html
 
         .navbar-item
           font-size: 0.9rem
+
+// //////////////////////////////////////////////////////////
+// Mobile sizing
+
+@media screen and (max-width: 769px)
+  .level-item
+    flex-direction: column
+
+  .title
+    &.is-super
+      font-size: 2rem
+
+  #introducing-rozii
+    text-align: center
+
+  #user-trial
+    text-align: center
+
+    .columns
+      display: flex
+      flex-direction: column-reverse
+
+    .button
+      width: 100%
 
   .image-grid
     .spoiler
