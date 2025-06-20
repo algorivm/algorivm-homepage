@@ -5,9 +5,280 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Algorivm</title>
+    <script preload type="module" src="/src/preload.ts"></script>
   </head>
   <body>
-    <div id="app"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar px-5 py-4 bg-base" role="navigation"
+      aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img
+            src="/branding/by_theme/dark/Algorivm-Brain.svg"
+            width="180"
+            height="100" />
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu"
+          aria-expanded="false" data-target="navbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="#home">
+            <span>HOME</span>
+          </a>
+          |
+          <a class="navbar-item" href="#about">
+            <span>ABOUT US</span>
+          </a>
+          |
+          <a class="navbar-item" href="#team">
+            <span>THE TEAM</span>
+          </a>
+          |
+          <a class="navbar-item" href="#rozii">
+            <span>ROZii</span>
+          </a>
+          |
+          <a class="navbar-item" href="#contact">
+            <span>CONTACT US</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Splash -->
+    <section class="section" id="splash">
+      <div class="stripe-text is-lower">
+        <h1 class="title is-super">
+          <span class="has-text-primary">Brilliant</span> outcomes through
+          <br class="is-hidden-touch" />
+          <span class="has-text-primary">technology</span> enabled
+          <span class="has-text-primary">learning</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Who are we? -->
+    <section class="section bg-instruments" id="who-are-we">
+      <div class="container is-max-desktop">
+        <div class="content">
+          <h2>Who are we?</h2>
+          <p>
+            Algorivm is an exciting new company developing groundbreaking
+            education related artificial intelligence technology. We are
+            Working in collaboration with Queen Mary University London and its
+            Centre for Digital Music, along with Edinburgh Napier University.
+            Our shared goal is to push the boundaries of Artificial
+            Intelligence and Machine Learning research for the benefit of
+            musicians and music teachers of all backgrounds. We are creating
+            truly groundbreaking technology and delivering outstanding
+            educational outcomes.
+          </p>
+          <h2>Innovate UK Research Grant</h2>
+          <p>
+            Algorivm's aims were recently validated by winning the Governments
+            highly competitive Innovate UK Smart Grant. Thousands of companies
+            enter this highlycompetitive competition with only the most
+            innovative
+            applications were successful.
+            Algorivm was one of the 2% of successful applicants, scoring 9.3 out
+            of 10 on nts, scoring Innovation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Innovate UK Quote -->
+    <section class="section bg-base" id="innovate-uk-quote">
+      <div class="container is-max-desktop">
+        <blockquote>The project is game changing and represents an excellent use
+          of Ai technology. The innovation is of the highest technical
+          merit.</blockquote>
+      </div>
+    </section>
+
+    <!-- Meet the team -->
+    <section class="section bg-instruments" id="meet-the-team">
+      <div class="container is-max-desktop">
+
+      </div>
+    </section>
+
+    <!-- Introducing Rozii -->
+    <section class="section bg-base" id="introducing-rozii">
+      <div class="container is-max-desktop">
+        <div class="columns">
+
+          <div class="column">
+            <img id="ad-1" src="/images/rozii-ad-1.png" alt="Rozii" />
+          </div>
+          <div class="column">
+            <h1
+              class="title is-size-2 pt-5">Introducing...</h1>
+            <figure class="image pb-6">
+              <!-- TODO: Get better image from team! -->
+              <img id="rozii-logo" src="/images/Rozii-ai.png" alt="Rozii" />
+            </figure>
+            <h1 class="title is-size-2">Practice really
+              can
+              <br class="is-hidden-touch" />
+              make perfect</h1>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section bg-instruments" id="how-it-works">
+      <div class="container is-max-desktop">
+        <div class="content">
+          <h3>How it works</h3>
+          <p>
+            Our rozii system listens to the musician and provides visual and
+            verbal feedback on key aspects of the performance to radically
+            improve the teaching and learning of a musical instrument.
+          </p>
+          <ul>
+            <li>The user uploads their digital sheet music manually or by taking
+              a
+              photo of their chosen musical score</li>
+            <li>This is converted into digital music notation.</li>
+            <li>The user then and performs the musical piece.</li>
+            <li>Algorivm transcribes their performance and compares it to the
+              original sheet music.</li>
+            <li>Our cutting-edge Machine Learning technology then compares the
+              user's transcribed performance to the original notation.</li>
+            <li>Important musical feedback and an accuracy score is then
+              presented back to the user.</li>
+            <li>The system also provides a hands-free user interface and
+              feedback,
+              this is an invaluable aid for visually impaired users and creates
+              a
+              much more rewarding user experience.</li>
+          </ul>
+          <h3>Our vision</h3>
+          <p>
+            It is important to highlight that we are not trying to use Ai
+            technology to replace the human aspect of learning or teaching an
+            instrument, quite the opposite:
+          </p>
+          <strong>Benefits for Music Teachers</strong>
+          <p>
+            Algorivm will assist teachers to gain more insight into their
+            students' development
+            and therefore offer more informed guidance to help their students
+            improve.
+          </p>
+          <strong>Benefits for Students</strong>
+          <p>
+            Music students will have a practice tool that
+            provides detailed feedback on their performances when practising.
+            The hands-free element of our user interface will also be a unique
+            and fun way to interact with Algorivm making it a fun and enjoyable
+            experience, encouraging students to practice more and with improved
+            results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Trial -->
+    <section class="section bg-base" id="user-trial">
+      <div class="container is-max-desktop">
+        <div class="columns">
+
+          <div class="column is-two-thirds">
+            <div class="block">
+              <h1
+                class="title pt-5 has-text-primary">User
+                Trial</h1>
+            </div>
+            <div class="block">
+              <p class="has-text-white">A part of our Government Funded project
+                includes a user trial to
+                be carried out in schools. We are looking for schools with 30
+                Guitar, 30 Piano and 30 Violin students to take part.</p>
+            </div>
+            <div class="block buttons is-left">
+              <button class="button is-primary is-outlined has-text-white"
+                type="button">
+                <span>FIND OUT MORE...</span>
+              </button>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <img id="ad-2" src="/images/rozii-ad-2.png" alt="Rozii" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+    <section class="section bg-instruments" id="contact-us">
+      <div class="container is-max-desktop">
+        <div class="block">
+          <h1 class="title">Contact us</h1>
+          <p>If you need further information, please get in contact with us and
+            we'll be happy to help.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-base">
+      <div class="content has-text-centered">
+
+        <!-- Primary logo -->
+        <div class="block">
+          <img
+            src="/branding/by_theme/dark/Algorivm-Brain.svg"
+            alt="Algorivm Logo"
+            width="180"
+            height="100" />
+        </div>
+
+        <!-- Company logos -->
+        <div class="block level-item">
+          <img src="/public/images/innovate-uk.png" alt="Innovate UK Logo"
+            class="mr-6"
+            width="120" />
+          <img src="/public/images/queen-mary.png" alt="Queen Mary Logo"
+            class="mr-6"
+            width="120" />
+          <img src="/public/images/penlogo.png" alt="Pen Logo" class="mr-6"
+            width="120" />
+          <img src="/public/images/edinburgh.png" alt="Edinburgh Logo"
+            class="mr-6"
+            width="120" />
+        </div>
+
+        <!-- Final text -->
+        <div class="block">
+          <p class="has-text-primary">©2025 • info@algorivm.com</p>
+          <!-- <div class="level-item">
+            <a href="/data-policy" class="has-text-primary">Our data policy</a>
+            <span>&nbsp;|&nbsp;</span>
+            <a href="/safeguarding" class="has-text-primary">Safeguarding</a>
+          </div> -->
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- Main -->
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
