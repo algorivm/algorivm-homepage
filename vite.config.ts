@@ -3,7 +3,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/algorivm-homepage/',
+  base: '/',
   build: {
     // For GitHub Pages:
     outDir: 'docs',
