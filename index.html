@@ -1,11 +1,100 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Defs -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/branding/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Info -->
     <title>Algorivm</title>
+    <link rel="icon" type="image/svg+xml" href="/branding/favicon.ico" />
+
+    <!-- CSS -->
     <script preload type="module" src="/src/preload.ts"></script>
+
+    <!-- Social -->
+    <link rel="canonical" href="https://algorivm.com/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Algorivm - AI-Powered Music Education & Practice Feedback" />
+    <meta
+      property="og:description"
+      content="Algorivm delivers AI-driven music practice feedback, sheet-music digitization, and performance analysis for students and teachers." />
+    <meta property="og:url" content="https://algorivm.com/" />
+    <meta
+      property="og:image"
+      content="https://algorivm.com/Splash.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+      content="Algorivm - AI-Powered Music Education" />
+    <meta
+      name="twitter:description"
+      content="AI-driven practice feedback, sheet-music digitization, and performance analysis for students and teachers." />
+    <meta
+      name="twitter:image"
+      content="https://algorivm.com/Splash.jpg" />
+
+    <!-- SEO JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Algorivm",
+      "url": "https://algorivm.com",
+      "logo": "https://algorivm.com/assets/logo.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/algorivm",
+        "https://twitter.com/algorivm"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://algorivm.com",
+      "name": "Algorivm",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://algorivm.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Rozii",
+      "operatingSystem": "All",
+      "applicationCategory": "Education",
+      "url": "https://algorivm.com/rozii",
+      "description": "AI-powered music practice feedback platform for transcribing and analyzing performances.",
+      "image": "https://algorivm.com/assets/rozii.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "GBP"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://algorivm.com/"
+        }
+      ]
+    }
+    </script>
+
   </head>
   <body class="bg-base">
 
@@ -407,7 +496,7 @@
 
       <!-- Form: TBD on where to POST to -->
       <div class="subcontainer is-max-tiny">
-        <form class="block">
+        <form class="block" method="POST" action="/">
           <div class="field">
             <div class="control">
               <input class="input" type="text" name="name" autocomplete="name"
